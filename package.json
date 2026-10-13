@@ -1,0 +1,22 @@
+{
+  "name": "stable-agents-latam-irl",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builder Session slides for the Agents on Open Rails hackathon (Celo × Ripio): Stable Agents LatAm IRL.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "15.5.4",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
