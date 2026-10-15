@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useCallback, useContext, useEffect, useState } from "react"
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react"
 
 /* Agents on Open Rails brand (from the official deck): near-black, white mono, Celo yellow for numbers,
    one color per track. JetBrains Mono for headlines, Source Serif 4 for the hackathon name. */
@@ -1312,6 +1312,8 @@ function slides(lang: Lang): { node: React.ReactNode }[] {
 }
 
 /* ---------- page ---------- */
+type ExportWindow = Window & { __bsCapture?: (k: number) => Promise<string>; __bsTotal?: number }
+
 export default function BuilderSessionPage() {
   const [i, setI] = useState(0)
   const [lang, setLang] = useState<Lang>("es")
@@ -1319,6 +1321,10 @@ export default function BuilderSessionPage() {
   const total = SLIDES.length
   const go = useCallback((d: number) => setI((s) => Math.max(0, Math.min(total - 1, s + d))), [total])
   const [promptOk, setPromptOk] = useState(false)
+  const rootRef = useRef<HTMLDivElement>(null)
+  // ?export=1 renders a bare 1280x720 deck (no header or controls) that the PNG export captures inside an iframe.
+  const [modoExport, setModoExport] = useState(false)
+  const [png, setPng] = useState<string | null>(null)
   const copiarPrompt = () =>
     navigator.clipboard?.writeText(PROMPT_LLM[lang]).then(() => {
       setPromptOk(true)
@@ -1329,6 +1335,7 @@ export default function BuilderSessionPage() {
   useEffect(() => {
     const q = new URLSearchParams(window.location.search)
     if (q.get("lang") === "en") setLang("en")
+    if (q.get("export") === "1") setModoExport(true)
     const n = Number(q.get("s"))
     if (n >= 1) setI(Math.min(n, total) - 1)
   }, [total])
@@ -1342,6 +1349,60 @@ export default function BuilderSessionPage() {
   useEffect(() => {
     document.documentElement.lang = lang
   }, [lang])
+
+  // Export frame: exposes a capture function the parent page calls slide by slide.
+  useEffect(() => {
+    if (!modoExport) return
+    const w = window as unknown as ExportWindow
+    w.__bsTotal = total
+    w.__bsCapture = async (k: number) => {
+      setI(k)
+      await new Promise((r) => setTimeout(r, 200))
+      await Promise.all(
+        Array.from(document.images).map((img) =>
+          img.complete ? null : new Promise((r) => img.addEventListener("load", r, { once: true })),
+        ),
+      )
+      await document.fonts.ready
+      const { toPng } = await import("html-to-image")
+      return toPng(rootRef.current as HTMLElement, { width: 1280, height: 720, pixelRatio: 1.5, backgroundColor: BG })
+    }
+  }, [modoExport, total])
+
+  // Downloads every slide as a 1920x1080 PNG, zipped. Only the slide is captured, not the deck chrome.
+  const descargarPNG = async () => {
+    if (png) return
+    setPng("…")
+    const frame = document.createElement("iframe")
+    frame.style.cssText = "position:fixed;left:-20000px;top:0;width:1280px;height:720px;border:0;"
+    frame.src = `${window.location.pathname}?export=1${lang === "en" ? "&lang=en" : ""}`
+    document.body.appendChild(frame)
+    try {
+      await new Promise((r) => frame.addEventListener("load", r, { once: true }))
+      const fw = frame.contentWindow as unknown as ExportWindow
+      for (let t = 0; t < 100 && !fw.__bsCapture; t++) await new Promise((r) => setTimeout(r, 100))
+      if (!fw.__bsCapture) throw new Error("export frame not ready")
+      const { default: JSZip } = await import("jszip")
+      const zip = new JSZip()
+      const n = fw.__bsTotal ?? total
+      for (let k = 0; k < n; k++) {
+        setPng(`${k + 1}/${n}`)
+        const url = await fw.__bsCapture(k)
+        zip.file(`${String(k + 1).padStart(2, "0")}.png`, url.split(",")[1], { base64: true })
+      }
+      const blob = await zip.generateAsync({ type: "blob" })
+      const a = document.createElement("a")
+      a.href = URL.createObjectURL(blob)
+      a.download = `builder-session-slides-${lang}.zip`
+      a.click()
+      setTimeout(() => URL.revokeObjectURL(a.href), 10000)
+    } catch {
+      window.alert(lang === "es" ? "No se pudieron exportar las slides. Probá de nuevo." : "Couldn't export the slides. Try again.")
+    } finally {
+      frame.remove()
+      setPng(null)
+    }
+  }
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -1385,7 +1446,7 @@ export default function BuilderSessionPage() {
   const es = lang === "es"
   return (
     <LangCtx.Provider value={lang}>
-      <div className="bs-root">
+      <div className={modoExport ? "bs-root bs-exp" : "bs-root"} ref={rootRef}>
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
         <div className="bs-grid" aria-hidden />
         <div className="bs-px" aria-hidden>
@@ -1421,10 +1482,15 @@ export default function BuilderSessionPage() {
             </div>
             <button
               className="bs-tool"
-              onClick={() => window.print()}
-              title={es ? "Guardar todas las slides como PDF" : "Save every slide as a PDF"}
+              onClick={descargarPNG}
+              disabled={!!png}
+              title={
+                es
+                  ? "Descargar cada slide como PNG (1920×1080) en un .zip"
+                  : "Download every slide as a PNG (1920×1080) in a .zip"
+              }
             >
-              PDF
+              {png ? `PNG ${png}` : "PNG ↓"}
             </button>
             <span className="bs-count">
               {String(i + 1).padStart(2, "0")} / {total}
@@ -1705,6 +1771,13 @@ const CSS = `
 .bs-dots button.on{width:22px;background:var(--green);}
 .bs-hint{position:relative;z-index:3;text-align:center;font-size:10.5px;letter-spacing:.08em;color:rgba(255,255,255,.3);padding:8px 0 12px;}
 @media(max-width:640px){.bs-hint{display:none;}}
+/* PNG export frame: just the slide */
+.bs-exp .bs-top,.bs-exp .bs-prog,.bs-exp .bs-ctrl,.bs-exp .bs-hint{display:none!important;}
+.bs-exp .bs-stage{padding:48px 64px;overflow:hidden;}
+.bs-exp .bs-slide{animation:none;}
+.bs-exp .bs-cmd button{display:none;}
+.bs-exp .bs-cmd pre{padding-right:16px;}
+.bs-tool:disabled{opacity:.7;cursor:progress;}
 /* print */
 .bs-print{display:none;}
 @media print{
