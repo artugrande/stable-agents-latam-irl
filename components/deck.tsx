@@ -1132,18 +1132,77 @@ function slides(lang: Lang): { node: React.ReactNode }[] {
         </>
       ),
     },
-    // Alcancía 2 · how it works, in frames from the demo
+    // Alcancía 2 · what it solves and how it uses each piece
     {
       node: (
         <>
           <Label k={t("EJEMPLO", "EXAMPLE")} v={t("cómo funciona Alcancía", "how Alcancía works")} />
-          <h2 className="bs-h2">
-            {t("Charlás, firma, ahorra solo.", "You chat, it signs, it saves on its own.")}
-          </h2>
-          <div className="bs-frames">
-            {[1, 2, 3, 4, 5, 6].map((n) => (
-              <img key={n} src={`/builder-session/alcancia-paso-${n}.webp`} alt="" />
+          <h2 className="bs-h2 bs-h2-wide">{t("Qué resuelve y cómo funciona.", "What it solves and how it works.")}</h2>
+          <div className="bs-how-ps">
+            <div>
+              <em>{t("EL PROBLEMA", "THE PROBLEM")}</em>
+              <span>
+                {t(
+                  "La plata que sobra se gasta, y ahorrar en pesos para un viaje en reales te expone al tipo de cambio.",
+                  "Spare money gets spent, and saving in pesos for a trip paid in reais exposes you to the exchange rate.",
+                )}
+              </span>
+            </div>
+            <div>
+              <em>{t("LA SOLUCIÓN", "THE SOLUTION")}</em>
+              <span>
+                {t(
+                  "Un agente que arma tu plan charlando, crea una alcancía onchain por meta y reparte cada ingreso solo, en la moneda en la que vas a gastar.",
+                  "An agent that builds your plan in a chat, creates one onchain piggy bank per goal and splits every paycheck on its own, in the currency you'll spend.",
+                )}
+              </span>
+            </div>
+          </div>
+          <div className="bs-how-flow">
+            {t(
+              ["Contás tus metas", "Firmás y nacen tus alcancías", "Te entra plata", "El agente la reparte sola"],
+              ["Tell it your goals", "Sign and your vaults are created", "Money comes in", "The agent splits it on its own"],
+            ).map((x, k) => (
+              <div key={x}>
+                <span>{String(k + 1).padStart(2, "0")}</span>
+                <b>{x}</b>
+              </div>
             ))}
+          </div>
+          <div className="bs-how-stack">
+            <div style={{ ["--c" as string]: GREEN }}>
+              <em>TRACK 1 · RIPIO</em>
+              <span>
+                {t("Ahorra en wARS y wBRL. Cargás pesos con Ripio Ramp.", "Saves in wARS and wBRL. Load pesos with Ripio Ramp.")}
+              </span>
+            </div>
+            <div style={{ ["--c" as string]: PURPLE }}>
+              <em>TRACK 2A · TEXTILE</em>
+              <span>
+                {t(
+                  "Convierte wARS → USD₮ → wBRL para metas en otra moneda.",
+                  "Converts wARS → USD₮ → wBRL for goals in another currency.",
+                )}
+              </span>
+            </div>
+            <div style={{ ["--c" as string]: ORANGE }}>
+              <em>TRACK 3 · BUY</em>
+              <span>
+                {t(
+                  "Paga sus datos con x402: SQD detecta ingresos y Chainstack lee saldos.",
+                  "Pays for its data with x402: SQD spots income and Chainstack reads balances.",
+                )}
+              </span>
+            </div>
+            <div style={{ ["--c" as string]: "#FFFFFF" }}>
+              <em>{t("INFRA · VERCEL", "INFRA · VERCEL")}</em>
+              <span>
+                {t(
+                  "App en Next.js, chat con AI SDK + AI Gateway y un cron que corre el agente cada hora.",
+                  "Next.js app, chat with AI SDK + AI Gateway and a cron that runs the agent every hour.",
+                )}
+              </span>
+            </div>
           </div>
         </>
       ),
@@ -1823,8 +1882,23 @@ const CSS = `
 .bs-video-still{display:none;}
 .bs-exp .bs-video video{display:none;}
 .bs-exp .bs-video-still{display:block;}
-.bs-frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:min(1120px,calc(46vh * 8 / 3));margin:0 auto;}
-.bs-frames img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block;}
+.bs-h2-wide{max-width:none;}
+.bs-how-ps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:14px;}
+.bs-how-ps div{border:1px solid var(--line);background:var(--panel);padding:16px 18px;display:flex;flex-direction:column;gap:8px;}
+.bs-how-ps div:first-child{border-left:2px solid #FF6B6B;}
+.bs-how-ps div:last-child{border-left:2px solid var(--green);}
+.bs-how-ps em{font-style:normal;font-size:11.5px;letter-spacing:.12em;color:var(--muted);}
+.bs-how-ps span{font-size:clamp(14px,min(1.6vw,2.6vh),19px);line-height:1.45;color:var(--text);}
+.bs-how-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-bottom:14px;border:1px solid var(--line);}
+.bs-how-flow div{padding:12px 14px;display:flex;align-items:center;gap:10px;}
+.bs-how-flow div+div{border-left:1px solid var(--line);}
+.bs-how-flow span{font-size:12px;color:var(--yellow);}
+.bs-how-flow b{font-weight:600;font-size:clamp(13px,1.4vw,16px);}
+.bs-how-stack{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+.bs-how-stack div{border-top:2px solid var(--c);padding-top:10px;display:flex;flex-direction:column;gap:6px;}
+.bs-how-stack em{font-style:normal;font-size:11px;letter-spacing:.1em;color:var(--c);}
+.bs-how-stack span{font-size:clamp(12.5px,1.3vw,15px);line-height:1.5;color:var(--soft);}
+@media(max-width:860px){.bs-how-ps{grid-template-columns:minmax(0,1fr);}.bs-how-flow,.bs-how-stack{grid-template-columns:repeat(2,minmax(0,1fr));}.bs-how-flow div:nth-child(3){border-left:0;}.bs-how-flow div:nth-child(n+3){border-top:1px solid var(--line);}}
 .bs-qrgrid{display:flex;justify-content:center;flex-wrap:nowrap;gap:clamp(14px,2.4vw,32px);margin-top:min(3vh,24px);}
 @media(max-width:860px){.bs-qrgrid{flex-wrap:wrap;}}
 .bs-qrgrid .bs-qr-card svg{width:clamp(90px,min(11vw,24vh),170px);height:clamp(90px,min(11vw,24vh),170px);}
@@ -1832,7 +1906,6 @@ const CSS = `
 .bs-qrgrid .bs-qr span{max-width:180px;}
 .bs-center{justify-content:center;margin-top:14px;}
 .bs-loops-shot{display:block;width:auto;max-width:100%;max-height:43vh;margin:0 auto;border-radius:14px;border:1px solid var(--line);}
-@media(max-width:720px){.bs-frames{grid-template-columns:repeat(2,minmax(0,1fr));}}
 /* eve tree */
 .bs-tree{margin:0;border:1px solid var(--line);background:#050506;padding:20px 22px;font-family:var(--mono);font-size:clamp(12px,1.3vw,15px);line-height:1.9;color:var(--soft);overflow:auto;}
 /* steps */
