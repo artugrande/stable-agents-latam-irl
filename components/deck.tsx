@@ -1189,8 +1189,8 @@ function slides(lang: Lang): { node: React.ReactNode }[] {
               <em>TRACK 3 · BUY</em>
               <span>
                 {t(
-                  "Paga sus datos con x402: SQD detecta ingresos y Chainstack lee saldos.",
-                  "Pays for its data with x402: SQD spots income and Chainstack reads balances.",
+                  "A través de usebuy.ai usa SQD para detectar cada ingreso y Chainstack para leer los saldos de las alcancías.",
+                  "Through usebuy.ai it uses SQD to detect every paycheck and Chainstack to read the piggy bank balances.",
                 )}
               </span>
             </div>
