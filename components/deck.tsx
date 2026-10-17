@@ -46,6 +46,8 @@ const QR_AL_WEB = { size: 33, d: "M2 2.5h7m6 0h3m3 0h2m1 0h7M2 3.5h1m5 0h1m4 0h1
 const QR_AL_SPEC = { size: 37, d: "M2 2.5h7m2 0h1m2 0h2m2 0h1m1 0h4m1 0h1m2 0h7M2 3.5h1m5 0h1m4 0h5m5 0h1m2 0h1m1 0h1m5 0h1M2 4.5h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h2m2 0h6m1 0h1m1 0h3m1 0h1M2 5.5h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1M2 6.5h1m1 0h3m1 0h1m1 0h1m1 0h2m3 0h1m2 0h3m2 0h1m2 0h1m1 0h3m1 0h1M2 7.5h1m5 0h1m1 0h4m2 0h5m3 0h1m3 0h1m5 0h1M2 8.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 9.5h2m1 0h2m2 0h1m5 0h4M2 10.5h1m1 0h5m2 0h7m1 0h1m4 0h1m3 0h5M2 11.5h1m2 0h1m1 0h1m5 0h1m4 0h1m1 0h2m3 0h1m2 0h2m1 0h4M2 12.5h1m4 0h2m3 0h3m2 0h4m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2M2 13.5h1m2 0h3m1 0h1m2 0h3m1 0h2m4 0h2m3 0h2m1 0h4M2 14.5h1m1 0h1m3 0h4m1 0h2m4 0h2m1 0h1m1 0h1m1 0h2m1 0h3m1 0h2M6 15.5h2m1 0h1m2 0h12m1 0h1m2 0h1m3 0h3M3 16.5h1m4 0h1m5 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h3m2 0h1m1 0h1M2 17.5h1m2 0h1m3 0h1m2 0h1m1 0h2m2 0h1m2 0h1m1 0h2m2 0h6M2 18.5h4m1 0h2m5 0h1m1 0h1m2 0h1m4 0h2m1 0h1m1 0h2m3 0h1M2 19.5h6m1 0h1m1 0h1m2 0h1m3 0h8m2 0h2m1 0h2m1 0h1M2 20.5h1m2 0h2m1 0h1m1 0h4m1 0h1m1 0h3m6 0h5m1 0h1M3 21.5h1m1 0h2m2 0h2m2 0h1m1 0h4m1 0h1m1 0h3m3 0h5m1 0h1M5 22.5h8m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h1m2 0h3M2 23.5h2m5 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h1M2 24.5h1m1 0h3m1 0h1m5 0h1m1 0h2m4 0h1m7 0h4M2 25.5h1m1 0h3m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m2 0h2m1 0h1m1 0h2m1 0h1M2 26.5h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h5m2 0h1m1 0h6m2 0h1M10 27.5h2m1 0h1m4 0h1m1 0h3m2 0h2m3 0h1m1 0h3M2 28.5h7m2 0h2m1 0h2m1 0h1m2 0h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h2M2 29.5h1m5 0h1m1 0h2m1 0h3m4 0h7m3 0h4M2 30.5h1m1 0h3m1 0h1m1 0h3m3 0h2m1 0h1m1 0h1m2 0h1m1 0h6m1 0h1M2 31.5h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m1 0h4m1 0h1m3 0h1m2 0h1m1 0h3M2 32.5h1m1 0h3m1 0h1m1 0h2m1 0h1m3 0h1m1 0h1m2 0h2m2 0h4m1 0h1M2 33.5h1m5 0h1m5 0h1m1 0h3m4 0h2m2 0h2m1 0h3M2 34.5h7m1 0h2m5 0h1m1 0h1m4 0h6m1 0h1m1 0h1" }
 const QR_AL_HOW = { size: 37, d: "M2 2.5h7m6 0h1m2 0h4m3 0h1m2 0h7M2 3.5h1m5 0h1m2 0h1m3 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m5 0h1M2 4.5h1m1 0h3m1 0h1m1 0h4m1 0h1m2 0h6m1 0h1m2 0h1m1 0h3m1 0h1M2 5.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h3m1 0h1m1 0h3m1 0h1M2 6.5h1m1 0h3m1 0h1m1 0h1m6 0h1m1 0h2m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1M2 7.5h1m5 0h1m1 0h1m3 0h1m2 0h3m2 0h1m5 0h1m5 0h1M2 8.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 9.5h2m1 0h1m2 0h2m2 0h1m2 0h3M2 10.5h1m1 0h5m2 0h1m1 0h5m1 0h1m4 0h3m1 0h5M2 11.5h1m1 0h2m3 0h1m6 0h1m4 0h3m1 0h1m2 0h2m1 0h2m1 0h1M3 12.5h2m1 0h1m1 0h1m2 0h4m2 0h1m2 0h1m2 0h1m3 0h1m2 0h1m1 0h2M2 13.5h1m1 0h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h3m3 0h3m1 0h1m1 0h1m1 0h5M3 14.5h4m1 0h3m2 0h2m5 0h2m1 0h1m2 0h2m1 0h3m1 0h2M4 15.5h1m1 0h1m6 0h6m3 0h1m2 0h1m1 0h2m3 0h3M5 16.5h4m10 0h1m1 0h1m1 0h1m3 0h2m2 0h1m1 0h1M2 17.5h1m8 0h1m1 0h3m2 0h1m1 0h5m1 0h3m1 0h3M4 18.5h1m2 0h2m2 0h1m1 0h4m2 0h1m1 0h1m2 0h4m1 0h2m3 0h1M2 19.5h2m1 0h1m3 0h3m4 0h1m1 0h5m2 0h1m2 0h2m1 0h2m1 0h1M7 20.5h4m2 0h1m2 0h4m2 0h1m1 0h1m2 0h1m1 0h2m1 0h1M2 21.5h2m3 0h1m1 0h1m2 0h2m3 0h4m1 0h1m2 0h3m1 0h4M3 22.5h3m2 0h1m1 0h2m1 0h2m1 0h3m3 0h3m1 0h2m1 0h3M2 23.5h2m1 0h1m3 0h2m1 0h4m1 0h1m2 0h1m2 0h1m1 0h1m2 0h2m1 0h1m2 0h1M2 24.5h1m2 0h1m2 0h1m1 0h2m1 0h1m1 0h4m3 0h2m6 0h2m1 0h1M2 25.5h1m1 0h2m3 0h3m1 0h1m1 0h1m1 0h1m5 0h5m2 0h3m1 0h1M2 26.5h1m1 0h2m2 0h1m1 0h2m5 0h1m1 0h1m6 0h5m2 0h2M10 27.5h1m1 0h5m1 0h1m2 0h3m2 0h1m3 0h1m1 0h3M2 28.5h7m2 0h2m4 0h2m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h2M2 29.5h1m5 0h1m1 0h2m2 0h1m1 0h1m4 0h1m1 0h4m3 0h3M2 30.5h1m1 0h3m1 0h1m1 0h5m2 0h1m2 0h1m2 0h1m2 0h6M2 31.5h1m1 0h3m1 0h1m1 0h3m2 0h4m3 0h1m1 0h1m1 0h2m2 0h2m2 0h1M2 32.5h1m1 0h3m1 0h1m1 0h2m1 0h3m3 0h3m1 0h3m2 0h2m1 0h2M2 33.5h1m5 0h1m6 0h2m1 0h1m1 0h5m2 0h2m1 0h3M2 34.5h7m1 0h2m1 0h1m2 0h1m2 0h1m1 0h1m2 0h3m1 0h2m3 0h1" }
 
+const QR_AL_SUB = { size: 37, d: "M2 2.5h7m2 0h1m1 0h2m1 0h1m1 0h1m2 0h3m1 0h1m2 0h7M2 3.5h1m5 0h1m5 0h1m2 0h2m3 0h2m2 0h1m1 0h1m5 0h1M2 4.5h1m1 0h3m1 0h1m1 0h5m1 0h1m1 0h1m3 0h3m3 0h1m1 0h3m1 0h1M2 5.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m4 0h2m3 0h3m1 0h1m1 0h3m1 0h1M2 6.5h1m1 0h3m1 0h1m1 0h3m3 0h3m2 0h2m2 0h1m2 0h1m1 0h3m1 0h1M2 7.5h1m5 0h1m1 0h1m1 0h1m1 0h2m3 0h2m1 0h1m1 0h1m3 0h1m5 0h1M2 8.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 9.5h2m2 0h1m3 0h1m2 0h6M2 10.5h1m1 0h5m2 0h2m2 0h2m2 0h1m2 0h1m1 0h1m1 0h1m1 0h5M3 11.5h2m2 0h1m2 0h1m1 0h4m2 0h1m1 0h3m2 0h1m2 0h2m1 0h4M2 12.5h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h2m2 0h1m1 0h2M3 13.5h1m1 0h3m1 0h1m1 0h5m1 0h2m2 0h3m1 0h1m4 0h3M2 14.5h2m2 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h2m1 0h2m1 0h4m2 0h2M3 15.5h3m4 0h1m1 0h1m2 0h1m1 0h1m2 0h2m3 0h1m1 0h2m3 0h3M2 16.5h2m1 0h2m1 0h1m3 0h1m1 0h1m1 0h3m3 0h1m1 0h1m1 0h3m1 0h1m2 0h1M3 17.5h1m1 0h1m8 0h4m3 0h1m1 0h2m2 0h3m1 0h2M4 18.5h2m1 0h3m1 0h1m2 0h2m1 0h1m1 0h2m3 0h4m1 0h2m3 0h1M3 19.5h1m1 0h1m1 0h1m2 0h2m4 0h1m1 0h1m1 0h10m1 0h4M4 20.5h1m1 0h4m2 0h3m2 0h1m11 0h2m1 0h2M2 21.5h2m2 0h2m1 0h1m1 0h1m1 0h5m5 0h3m1 0h7M3 22.5h2m3 0h2m1 0h4m1 0h2m2 0h2m4 0h1m2 0h3m1 0h2M2 23.5h4m3 0h1m1 0h2m2 0h9m1 0h1m2 0h1m2 0h1m2 0h1M2 24.5h1m1 0h2m2 0h1m2 0h3m1 0h1m3 0h1m2 0h2m3 0h1m3 0h1m1 0h1M2 25.5h1m2 0h3m4 0h1m1 0h1m3 0h1m3 0h2m2 0h3m2 0h4M2 26.5h1m2 0h4m3 0h1m1 0h2m2 0h2m1 0h1m2 0h1m1 0h5m2 0h1M10 27.5h2m1 0h1m1 0h1m2 0h5m1 0h3m3 0h1m1 0h1m1 0h1M2 28.5h7m2 0h4m1 0h2m1 0h1m3 0h4m1 0h1m1 0h1m1 0h1M2 29.5h1m5 0h1m1 0h2m3 0h1m1 0h1m1 0h8m3 0h4M2 30.5h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m2 0h1m2 0h1m1 0h6m1 0h1M2 31.5h1m1 0h3m1 0h1m1 0h1m3 0h1m2 0h1m2 0h2m1 0h1m1 0h1m1 0h1m2 0h1m2 0h2M2 32.5h1m1 0h3m1 0h1m1 0h9m3 0h1m2 0h5M2 33.5h1m5 0h1m3 0h3m1 0h2m5 0h2m2 0h2m1 0h3M2 34.5h7m1 0h3m2 0h5m5 0h5m3 0h1" }
+
 const AGENDA: { h: string; min: number; es: [string, string | string[]]; en: [string, string | string[]] }[] = [
   {
     h: "18:00",
@@ -187,7 +189,7 @@ Bridge: https://bridge.ripio.com (developers: https://bridge.ripio.com/developer
 - Faucet de Google Cloud Web3 en Celo mainnet, con verificación única de Self: https://cloud.google.com/application/web3/faucet/celo/mainnet
 
 # Ejemplo de referencia
-- Alcancía, agente de ahorro en wARS/wBRL que aplica a los tracks 1, 2A y 3: https://alcancia-celo.vercel.app · repo: https://github.com/artugrande/alcancia · cómo funciona: https://alcancia-celo.vercel.app/como-funciona · demo: https://alcancia-celo.vercel.app/demo.mp4
+- Alcancía, agente de ahorro en wARS/wBRL que aplica a los tracks 1, 2A y 3: https://alcancia-celo.vercel.app · repo: https://github.com/artugrande/alcancia · cómo funciona: https://alcancia-celo.vercel.app/como-funciona · demo: https://alcancia-celo.vercel.app/demo.mp4 · submission en Loops House: https://www.loops.house/explore-projects/alcanc-a-c7e7e
 
 # Ayuda
 - Telegram de la hackathon (escribí en inglés): https://t.me/realworldagentshackathon
@@ -267,7 +269,7 @@ Bridge: https://bridge.ripio.com (developers: https://bridge.ripio.com/developer
 - Google Cloud Web3 faucet on Celo mainnet, with a one-time Self verification: https://cloud.google.com/application/web3/faucet/celo/mainnet
 
 # Reference example
-- Alcancía, a wARS/wBRL savings agent that applies to tracks 1, 2A and 3: https://alcancia-celo.vercel.app · repo: https://github.com/artugrande/alcancia · how it works: https://alcancia-celo.vercel.app/como-funciona · demo: https://alcancia-celo.vercel.app/demo.mp4
+- Alcancía, a wARS/wBRL savings agent that applies to tracks 1, 2A and 3: https://alcancia-celo.vercel.app · repo: https://github.com/artugrande/alcancia · how it works: https://alcancia-celo.vercel.app/como-funciona · demo: https://alcancia-celo.vercel.app/demo.mp4 · Loops House submission: https://www.loops.house/explore-projects/alcanc-a-c7e7e
 
 # Help
 - Hackathon Telegram (write in English): https://t.me/realworldagentshackathon
@@ -1157,7 +1159,7 @@ function slides(lang: Lang): { node: React.ReactNode }[] {
             <QR q={QR_AL_REPO} label={t("Repo", "Repo")} url="github.com/artugrande/alcancia" />
             <QR q={QR_AL_SPEC} label={t("Spec", "Spec")} url="arturogrande.com/builder-session/alcancia-spec.pdf" />
             <QR q={QR_AL_HOW} label={t("Cómo funciona", "How it works")} url="alcancia-celo.vercel.app/como-funciona" />
-            <QR q={QR_LOOPS} label={t("Submission", "Submission")} url="loops.house/agents-on-open-rails" />
+            <QR q={QR_AL_SUB} label={t("Submission", "Submission")} url="loops.house/explore-projects/alcanc-a-c7e7e" />
           </div>
         </>
       ),
@@ -1175,6 +1177,11 @@ function slides(lang: Lang): { node: React.ReactNode }[] {
             alt={t("Alcancía cargada en Loops House", "Alcancía on Loops House")}
             className="bs-loops-shot"
           />
+          <div className="bs-trk-links bs-center">
+            <A href="https://www.loops.house/explore-projects/alcanc-a-c7e7e">
+              {t("Ver la submission de Alcancía", "See Alcancía's submission")} ↗
+            </A>
+          </div>
         </>
       ),
     },
@@ -1823,7 +1830,8 @@ const CSS = `
 .bs-qrgrid .bs-qr-card svg{width:clamp(90px,min(11vw,24vh),170px);height:clamp(90px,min(11vw,24vh),170px);}
 .bs-qrgrid .bs-qr b{font-size:clamp(14px,1.5vw,18px);}
 .bs-qrgrid .bs-qr span{max-width:180px;}
-.bs-loops-shot{display:block;width:auto;max-width:100%;max-height:48vh;margin:0 auto;border-radius:14px;border:1px solid var(--line);}
+.bs-center{justify-content:center;margin-top:14px;}
+.bs-loops-shot{display:block;width:auto;max-width:100%;max-height:43vh;margin:0 auto;border-radius:14px;border:1px solid var(--line);}
 @media(max-width:720px){.bs-frames{grid-template-columns:repeat(2,minmax(0,1fr));}}
 /* eve tree */
 .bs-tree{margin:0;border:1px solid var(--line);background:#050506;padding:20px 22px;font-family:var(--mono);font-size:clamp(12px,1.3vw,15px);line-height:1.9;color:var(--soft);overflow:auto;}
