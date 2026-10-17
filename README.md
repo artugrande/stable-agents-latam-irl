@@ -20,7 +20,7 @@ Slides del workshop para las **builder sessions** de la hackathon **Agents on Op
 
 ## Qué cubre
 
-26 slides:
+27 slides:
 
 1. Portada y agenda (15 min de llegada, 45 min de keynote, 1 h para arrancar a construir)
 2. Las 6 builder sessions: Salta, Jujuy, Córdoba, Rosario, Buenos Aires y Mar del Plata
@@ -29,7 +29,7 @@ Slides del workshop para las **builder sessions** de la hackathon **Agents on Op
 5. Recursos de Ripio: stablecoins wFiat, ramps y bridge (con QR)
 6. Faucet de USA₮, ideas de agentes, Celopedia y eve (Vercel)
 7. De cero a un agente y demo en vivo del host: un agente real con una transacción en mainnet
-8. Ejemplo de referencia: [Alcancía](https://alcancia-celo.vercel.app), un agente de ahorro que aplica a tres tracks, y cómo se ve su submission en Loops House (repo, web, demo video y spec)
+8. Ejemplo de referencia: [Alcancía](https://alcancia-celo.vercel.app), un agente de ahorro que aplica a tres tracks: video demo, cómo funciona, links con QR y cómo se ve su submission en Loops House
 9. Reglas, attribution tag (ERC-8021) e identidad (ERC-8004), inscripción en Loops House y ayuda
 
 ## Correrlo local

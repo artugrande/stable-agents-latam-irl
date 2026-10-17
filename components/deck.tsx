@@ -43,7 +43,6 @@ const QR_ERC8004 = { size: 37, d: "M2 2.5h7m3 0h1m1 0h2m2 0h1m1 0h2m1 0h1m1 0h1m
 
 const QR_AL_REPO = { size: 33, d: "M2 2.5h7m2 0h1m2 0h2m2 0h1m2 0h2m1 0h7M2 3.5h1m5 0h1m3 0h1m4 0h2m5 0h1m5 0h1M2 4.5h1m1 0h3m1 0h1m1 0h4m2 0h1m5 0h1m1 0h1m1 0h3m1 0h1M2 5.5h1m1 0h3m1 0h1m1 0h4m1 0h3m1 0h1m2 0h1m1 0h1m1 0h3m1 0h1M2 6.5h1m1 0h3m1 0h1m1 0h1m1 0h2m4 0h1m1 0h3m1 0h1m1 0h3m1 0h1M2 7.5h1m5 0h1m1 0h1m1 0h2m3 0h1m1 0h1m4 0h1m5 0h1M2 8.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 9.5h5m1 0h1m1 0h1m2 0h1M2 10.5h1m1 0h5m2 0h1m2 0h1m4 0h1m2 0h1m1 0h5M2 11.5h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h3m2 0h1m2 0h2m1 0h3m3 0h1M2 12.5h1m2 0h2m1 0h1m2 0h1m3 0h6m1 0h1m3 0h1M2 13.5h4m1 0h1m6 0h2m1 0h1m2 0h1m6 0h1m1 0h1M2 14.5h2m1 0h1m1 0h2m1 0h3m3 0h2m1 0h1m7 0h2M2 15.5h1m2 0h2m11 0h1m1 0h7m3 0h1M3 16.5h4m1 0h3m3 0h1m2 0h2m1 0h1m1 0h2m2 0h3M4 17.5h3m3 0h2m2 0h1m1 0h1m4 0h6m2 0h1M2 18.5h3m1 0h3m1 0h4m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2M2 19.5h3m1 0h2m1 0h2m4 0h2m1 0h4m1 0h4m1 0h1m1 0h1M2 20.5h1m2 0h2m1 0h10m1 0h1m2 0h1m1 0h3m1 0h1M2 21.5h1m2 0h1m3 0h1m1 0h1m2 0h2m1 0h2m1 0h1m1 0h3m4 0h1M2 22.5h1m1 0h2m2 0h2m1 0h3m2 0h1m2 0h1m1 0h6m1 0h3M10 23.5h2m6 0h1m1 0h1m1 0h1m3 0h5M2 24.5h7m4 0h2m2 0h2m2 0h2m1 0h1m1 0h3M2 25.5h1m5 0h1m1 0h3m1 0h1m1 0h2m2 0h3m3 0h1m2 0h2M2 26.5h1m1 0h3m1 0h1m1 0h1m2 0h2m2 0h1m1 0h1m2 0h5m1 0h1M2 27.5h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h3m4 0h4M2 28.5h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h3m2 0h9M2 29.5h1m5 0h1m4 0h2m1 0h1m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1M2 30.5h7m1 0h4m1 0h1m3 0h3m2 0h3m1 0h1" }
 const QR_AL_WEB = { size: 33, d: "M2 2.5h7m6 0h3m3 0h2m1 0h7M2 3.5h1m5 0h1m4 0h1m1 0h5m4 0h1m5 0h1M2 4.5h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h3m1 0h1m1 0h3m1 0h1M2 5.5h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h2m1 0h1m1 0h1m2 0h1m1 0h3m1 0h1M2 6.5h1m1 0h3m1 0h1m1 0h1m2 0h1m3 0h2m1 0h2m2 0h1m1 0h3m1 0h1M2 7.5h1m5 0h1m1 0h1m1 0h1m9 0h1m1 0h1m5 0h1M2 8.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 9.5h1m1 0h2m2 0h1m1 0h1m2 0h2M2 10.5h1m1 0h5m9 0h2m1 0h1m2 0h5M3 11.5h2m4 0h2m1 0h1m1 0h4m3 0h6m3 0h1M3 12.5h1m1 0h1m2 0h1m3 0h9m3 0h3M3 13.5h1m3 0h1m1 0h4m1 0h2m1 0h1m2 0h1m1 0h3m1 0h2m1 0h1M4 14.5h1m1 0h7m3 0h2m1 0h1m1 0h1m5 0h2M2 15.5h2m2 0h1m4 0h4m2 0h2m1 0h7m3 0h1M3 16.5h2m1 0h1m1 0h2m1 0h1m1 0h1m5 0h2m1 0h2m1 0h1m1 0h2M4 17.5h1m5 0h2m1 0h2m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m2 0h1M3 18.5h1m1 0h1m2 0h2m3 0h2m4 0h1m7 0h2M2 19.5h1m1 0h1m1 0h1m2 0h1m1 0h2m2 0h3m2 0h7m1 0h1m1 0h1M2 20.5h1m1 0h1m3 0h1m1 0h1m2 0h1m1 0h3m4 0h3m1 0h1m1 0h1M2 21.5h1m2 0h3m3 0h1m3 0h1m1 0h1m3 0h1m3 0h1m3 0h1M2 22.5h1m2 0h1m1 0h2m5 0h1m1 0h4m2 0h5m1 0h3M10 23.5h1m2 0h2m3 0h3m1 0h1m3 0h5M2 24.5h7m3 0h3m2 0h1m3 0h2m1 0h1m1 0h3M2 25.5h1m5 0h1m1 0h2m1 0h1m2 0h2m2 0h3m3 0h1m2 0h1M2 26.5h1m1 0h3m1 0h1m1 0h1m1 0h1m4 0h4m1 0h5m1 0h2M2 27.5h1m1 0h3m1 0h1m1 0h3m3 0h1m1 0h4m5 0h4M2 28.5h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m1 0h3m1 0h9M2 29.5h1m5 0h1m4 0h3m1 0h1m2 0h1m1 0h2m1 0h3m1 0h1M2 30.5h7m1 0h2m4 0h2m1 0h1m6 0h1m1 0h1" }
-const QR_AL_VIDEO = { size: 33, d: "M2 2.5h7m2 0h3m1 0h1m2 0h1m2 0h2m1 0h7M2 3.5h1m5 0h1m2 0h1m3 0h5m4 0h1m5 0h1M2 4.5h1m1 0h3m1 0h1m1 0h4m2 0h3m1 0h3m1 0h1m1 0h3m1 0h1M2 5.5h1m1 0h3m1 0h1m1 0h1m1 0h4m3 0h1m1 0h1m2 0h1m1 0h3m1 0h1M2 6.5h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h2m2 0h1m1 0h3m1 0h1M2 7.5h1m5 0h1m1 0h1m2 0h1m1 0h4m3 0h1m1 0h1m5 0h1M2 8.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 9.5h3m4 0h2m2 0h2M2 10.5h1m1 0h5m5 0h4m1 0h1m1 0h1m2 0h5M2 11.5h3m1 0h1m5 0h1m2 0h1m2 0h1m2 0h6m3 0h1M2 12.5h2m2 0h1m1 0h3m2 0h1m2 0h2m1 0h2m3 0h3M3 13.5h2m11 0h3m1 0h1m1 0h3m1 0h2m1 0h1M2 14.5h1m1 0h1m1 0h1m1 0h1m2 0h3m1 0h3m1 0h1m1 0h1m5 0h2M3 15.5h5m1 0h3m4 0h1m1 0h1m1 0h7m3 0h1M2 16.5h2m1 0h6m2 0h1m3 0h4m1 0h2m1 0h1m1 0h2M2 17.5h2m5 0h2m3 0h1m3 0h1m3 0h1m1 0h1m1 0h1m2 0h1M2 18.5h1m4 0h2m2 0h1m1 0h1m1 0h1m3 0h1m7 0h2M2 19.5h3m1 0h1m2 0h2m1 0h3m1 0h1m3 0h7m1 0h1m1 0h1M2 20.5h1m1 0h1m2 0h5m2 0h1m1 0h2m4 0h3m1 0h1m1 0h1M2 21.5h1m2 0h2m3 0h5m2 0h1m3 0h1m3 0h1m3 0h1M2 22.5h1m1 0h1m3 0h1m2 0h3m3 0h3m2 0h5m1 0h3M10 23.5h6m2 0h3m1 0h1m3 0h5M2 24.5h7m2 0h3m1 0h3m3 0h2m1 0h1m1 0h3M2 25.5h1m5 0h1m1 0h1m4 0h1m1 0h1m2 0h3m3 0h1M2 26.5h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h5m1 0h5m1 0h3M2 27.5h1m1 0h3m1 0h1m1 0h2m1 0h1m4 0h4m5 0h4M2 28.5h1m1 0h3m1 0h1m1 0h3m1 0h2m1 0h3m1 0h9M2 29.5h1m5 0h1m2 0h2m1 0h1m1 0h2m2 0h1m1 0h2m1 0h3m1 0h1M2 30.5h7m1 0h4m1 0h1m1 0h1m1 0h1m6 0h1m1 0h1" }
 const QR_AL_SPEC = { size: 37, d: "M2 2.5h7m2 0h1m2 0h2m2 0h1m1 0h4m1 0h1m2 0h7M2 3.5h1m5 0h1m4 0h5m5 0h1m2 0h1m1 0h1m5 0h1M2 4.5h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h2m2 0h6m1 0h1m1 0h3m1 0h1M2 5.5h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1M2 6.5h1m1 0h3m1 0h1m1 0h1m1 0h2m3 0h1m2 0h3m2 0h1m2 0h1m1 0h3m1 0h1M2 7.5h1m5 0h1m1 0h4m2 0h5m3 0h1m3 0h1m5 0h1M2 8.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 9.5h2m1 0h2m2 0h1m5 0h4M2 10.5h1m1 0h5m2 0h7m1 0h1m4 0h1m3 0h5M2 11.5h1m2 0h1m1 0h1m5 0h1m4 0h1m1 0h2m3 0h1m2 0h2m1 0h4M2 12.5h1m4 0h2m3 0h3m2 0h4m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2M2 13.5h1m2 0h3m1 0h1m2 0h3m1 0h2m4 0h2m3 0h2m1 0h4M2 14.5h1m1 0h1m3 0h4m1 0h2m4 0h2m1 0h1m1 0h1m1 0h2m1 0h3m1 0h2M6 15.5h2m1 0h1m2 0h12m1 0h1m2 0h1m3 0h3M3 16.5h1m4 0h1m5 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h3m2 0h1m1 0h1M2 17.5h1m2 0h1m3 0h1m2 0h1m1 0h2m2 0h1m2 0h1m1 0h2m2 0h6M2 18.5h4m1 0h2m5 0h1m1 0h1m2 0h1m4 0h2m1 0h1m1 0h2m3 0h1M2 19.5h6m1 0h1m1 0h1m2 0h1m3 0h8m2 0h2m1 0h2m1 0h1M2 20.5h1m2 0h2m1 0h1m1 0h4m1 0h1m1 0h3m6 0h5m1 0h1M3 21.5h1m1 0h2m2 0h2m2 0h1m1 0h4m1 0h1m1 0h3m3 0h5m1 0h1M5 22.5h8m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h1m2 0h3M2 23.5h2m5 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h1M2 24.5h1m1 0h3m1 0h1m5 0h1m1 0h2m4 0h1m7 0h4M2 25.5h1m1 0h3m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m2 0h2m1 0h1m1 0h2m1 0h1M2 26.5h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h5m2 0h1m1 0h6m2 0h1M10 27.5h2m1 0h1m4 0h1m1 0h3m2 0h2m3 0h1m1 0h3M2 28.5h7m2 0h2m1 0h2m1 0h1m2 0h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h2M2 29.5h1m5 0h1m1 0h2m1 0h3m4 0h7m3 0h4M2 30.5h1m1 0h3m1 0h1m1 0h3m3 0h2m1 0h1m1 0h1m2 0h1m1 0h6m1 0h1M2 31.5h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m1 0h4m1 0h1m3 0h1m2 0h1m1 0h3M2 32.5h1m1 0h3m1 0h1m1 0h2m1 0h1m3 0h1m1 0h1m2 0h2m2 0h4m1 0h1M2 33.5h1m5 0h1m5 0h1m1 0h3m4 0h2m2 0h2m1 0h3M2 34.5h7m1 0h2m5 0h1m1 0h1m4 0h6m1 0h1m1 0h1" }
 const QR_AL_HOW = { size: 37, d: "M2 2.5h7m6 0h1m2 0h4m3 0h1m2 0h7M2 3.5h1m5 0h1m2 0h1m3 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m5 0h1M2 4.5h1m1 0h3m1 0h1m1 0h4m1 0h1m2 0h6m1 0h1m2 0h1m1 0h3m1 0h1M2 5.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h3m1 0h1m1 0h3m1 0h1M2 6.5h1m1 0h3m1 0h1m1 0h1m6 0h1m1 0h2m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1M2 7.5h1m5 0h1m1 0h1m3 0h1m2 0h3m2 0h1m5 0h1m5 0h1M2 8.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 9.5h2m1 0h1m2 0h2m2 0h1m2 0h3M2 10.5h1m1 0h5m2 0h1m1 0h5m1 0h1m4 0h3m1 0h5M2 11.5h1m1 0h2m3 0h1m6 0h1m4 0h3m1 0h1m2 0h2m1 0h2m1 0h1M3 12.5h2m1 0h1m1 0h1m2 0h4m2 0h1m2 0h1m2 0h1m3 0h1m2 0h1m1 0h2M2 13.5h1m1 0h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h3m3 0h3m1 0h1m1 0h1m1 0h5M3 14.5h4m1 0h3m2 0h2m5 0h2m1 0h1m2 0h2m1 0h3m1 0h2M4 15.5h1m1 0h1m6 0h6m3 0h1m2 0h1m1 0h2m3 0h3M5 16.5h4m10 0h1m1 0h1m1 0h1m3 0h2m2 0h1m1 0h1M2 17.5h1m8 0h1m1 0h3m2 0h1m1 0h5m1 0h3m1 0h3M4 18.5h1m2 0h2m2 0h1m1 0h4m2 0h1m1 0h1m2 0h4m1 0h2m3 0h1M2 19.5h2m1 0h1m3 0h3m4 0h1m1 0h5m2 0h1m2 0h2m1 0h2m1 0h1M7 20.5h4m2 0h1m2 0h4m2 0h1m1 0h1m2 0h1m1 0h2m1 0h1M2 21.5h2m3 0h1m1 0h1m2 0h2m3 0h4m1 0h1m2 0h3m1 0h4M3 22.5h3m2 0h1m1 0h2m1 0h2m1 0h3m3 0h3m1 0h2m1 0h3M2 23.5h2m1 0h1m3 0h2m1 0h4m1 0h1m2 0h1m2 0h1m1 0h1m2 0h2m1 0h1m2 0h1M2 24.5h1m2 0h1m2 0h1m1 0h2m1 0h1m1 0h4m3 0h2m6 0h2m1 0h1M2 25.5h1m1 0h2m3 0h3m1 0h1m1 0h1m1 0h1m5 0h5m2 0h3m1 0h1M2 26.5h1m1 0h2m2 0h1m1 0h2m5 0h1m1 0h1m6 0h5m2 0h2M10 27.5h1m1 0h5m1 0h1m2 0h3m2 0h1m3 0h1m1 0h3M2 28.5h7m2 0h2m4 0h2m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h2M2 29.5h1m5 0h1m1 0h2m2 0h1m1 0h1m4 0h1m1 0h4m3 0h3M2 30.5h1m1 0h3m1 0h1m1 0h5m2 0h1m2 0h1m2 0h1m2 0h6M2 31.5h1m1 0h3m1 0h1m1 0h3m2 0h4m3 0h1m1 0h1m1 0h2m2 0h2m2 0h1M2 32.5h1m1 0h3m1 0h1m1 0h2m1 0h3m3 0h3m1 0h3m2 0h2m1 0h2M2 33.5h1m5 0h1m6 0h2m1 0h1m1 0h5m2 0h2m1 0h3M2 34.5h7m1 0h2m1 0h1m2 0h1m2 0h1m1 0h1m2 0h3m1 0h2m3 0h1" }
 
@@ -1109,164 +1108,74 @@ function slides(lang: Lang): { node: React.ReactNode }[] {
         </>
       ),
     },
-    // Alcancía 1 · reference example
-    {
-      node: (
-        <div className="bs-split bs-al">
-          <div>
-            <Label
-              k={t("EJEMPLO", "EXAMPLE")}
-              v={<span style={{ color: GREEN }}>{t("ALCANCÍA · AGENTE DE AHORRO", "ALCANCÍA · SAVINGS AGENT")}</span>}
-            />
-            <h2 className="bs-h2">
-              {t(
-                "Un agente de ahorro para LatAm: una alcancía onchain por meta.",
-                "A savings agent for LatAm: one onchain piggy bank per goal.",
-              )}
-            </h2>
-            <div className="bs-al-prob">
-              <div className="bs-crit-t">{t("El problema", "The problem")}</div>
-              <ul className="bs-ul">
-                {t(
-                  [
-                    "La plata que queda al lado del gasto diario se gasta",
-                    "Ahorrás en una moneda y gastás en otra (un viaje a Brasil ahorrado en pesos)",
-                    "Nadie hace la cuenta entre varias metas, fechas y monedas",
-                  ],
-                  [
-                    "Money left next to everyday spending gets spent",
-                    "You save in one currency and spend in another (a trip to Brazil saved in pesos)",
-                    "Nobody does the math across several goals, dates and currencies",
-                  ],
-                ).map((x) => (
-                  <li key={x}>{x}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="bs-al-steps">
-              {t(
-                [
-                  ["01", "Plan conversado", "Le contás tus metas, ingreso y gastos. El % por meta se calcula en código, no con el modelo."],
-                  ["02", "Una alcancía por meta", "Un contrato propio por meta. La plata solo puede volver a su dueño."],
-                  ["03", "Ahorro automático", "Cada ingreso se reparte solo. Si la meta es un viaje, ahorra en la moneda del destino."],
-                  ["04", "Freno anti-impulso", "Para romper la alcancía antes: reflexión, acertijo o 72 h de espera."],
-                ],
-                [
-                  ["01", "Conversational plan", "Tell it your goals, income and costs. The % per goal is computed in code, not by the model."],
-                  ["02", "One vault per goal", "A contract per goal. Funds can only ever go back to their owner."],
-                  ["03", "Savings on autopilot", "Every paycheck is split automatically. Trip goals save in the destination currency."],
-                  ["04", "Anti-impulse brake", "Breaking a vault early takes a reflection, a riddle or a 72 h wait."],
-                ],
-              ).map(([n, ti, d]) => (
-                <div key={n}>
-                  <span>{n}</span>
-                  <b>{ti}</b>
-                  <em>{d}</em>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="bs-al-r">
-            <QR q={QR_AL_WEB} label={t("Probalo", "Try it")} url="alcancia-celo.vercel.app" />
-          </div>
-        </div>
-      ),
-    },
-    // Alcancía 2 · one agent, three tracks
+    // Alcancía 1 · demo video
     {
       node: (
         <>
-          <Label k={t("EJEMPLO", "EXAMPLE")} v={t("cómo Alcancía aplica a la hackathon", "how Alcancía maps to the hackathon")} />
-          <h2 className="bs-h2">{t("Un agente, tres tracks.", "One agent, three tracks.")}</h2>
-          <div className="bs-al-tracks">
-            <div style={{ ["--c" as string]: GREEN }}>
-              <em>TRACK 1 · RIPIO × CELO</em>
-              <b>{t("El corazón", "The core")}</b>
-              <span>
-                {t(
-                  "Todo el ahorro vive en wARS, wBRL y las demás wFiat de Ripio. Ripio Ramp para cargar pesos y retirar al banco.",
-                  "All savings live in wARS, wBRL and Ripio's other wFiat. Ripio Ramp to load pesos and cash out to a bank.",
-                )}
-              </span>
-            </div>
-            <div style={{ ["--c" as string]: PURPLE }}>
-              <em>TRACK 2A · TEXTILE FX</em>
-              <b>{t("Metas en otra moneda", "Goals in another currency")}</b>
-              <span>
-                {t(
-                  "Para un viaje a Florianópolis, el agente pide cotización RFQ y convierte wARS → USD₮ → wBRL.",
-                  "For a trip to Florianópolis, the agent requests an RFQ quote and converts wARS → USD₮ → wBRL.",
-                )}
-              </span>
-            </div>
-            <div style={{ ["--c" as string]: ORANGE }}>
-              <em>TRACK 3 · BUILD WITH BUY</em>
-              <b>{t("Paga por sus datos", "Pays for its own data")}</b>
-              <span>
-                {t(
-                  "Lee la cadena con SQD (gratis) y paga Chainstack RPC con x402: US$0,01 por ciclo.",
-                  "Reads the chain with SQD (free) and pays for Chainstack RPC with x402: US$0.01 per cycle.",
-                )}
-              </span>
-            </div>
-          </div>
-          <div className="bs-al-proof">
-            {t(
-              [
-                ["Attribution tag", "celo_cbcc681c15b7 en cada tx, del usuario y del agente"],
-                ["ERC-8004", "Agente #9911 registrado desde su propia wallet"],
-                ["Contratos", "Foundry, 27 tests con fuzzing, verificados en Blockscout"],
-                ["Gas", "Cada uno paga el suyo. Sin relayer"],
-              ],
-              [
-                ["Attribution tag", "celo_cbcc681c15b7 on every tx, user and agent"],
-                ["ERC-8004", "Agent #9911 registered from its own wallet"],
-                ["Contracts", "Foundry, 27 tests with fuzzing, verified on Blockscout"],
-                ["Gas", "Everyone pays their own. No relayer"],
-              ],
-            ).map(([k, v]) => (
-              <div key={k}>
-                <b>{k}</b>
-                <span>{v}</span>
-              </div>
-            ))}
-          </div>
-          <div className="bs-trk-links">
-            <A href="https://alcancia-celo.vercel.app/como-funciona">{t("Cómo funciona", "How it works")} ↗</A>
-            <A href="https://8004scan.io/agents/celo/9911">8004scan · #9911 ↗</A>
+          <Label
+            k={t("EJEMPLO", "EXAMPLE")}
+            v={<span style={{ color: GREEN }}>{t("ALCANCÍA · AGENTE DE AHORRO EN wARS / wBRL", "ALCANCÍA · wARS / wBRL SAVINGS AGENT")}</span>}
+          />
+          <h2 className="bs-h2">{t("Mirá un agente real funcionando.", "Watch a real agent in action.")}</h2>
+          <div className="bs-video">
+            <video
+              src="https://alcancia-celo.vercel.app/demo.mp4"
+              poster="/builder-session/alcancia-video-poster.webp"
+              controls
+              playsInline
+              preload="none"
+            />
+            <img src="/builder-session/alcancia-video-poster.webp" alt="" className="bs-video-still" />
           </div>
         </>
       ),
     },
-    // Alcancía 3 · what a submission looks like
+    // Alcancía 2 · how it works, in frames from the demo
     {
       node: (
-        <div className="bs-split bs-sub">
-          <div>
-            <Label k={t("SUBMISSION", "SUBMISSION")} v={<span className="bs-white">LOOPS HOUSE</span>} />
-            <h2 className="bs-h2">{t("Así se ve una submission.", "This is what a submission looks like.")}</h2>
-            <img
-              src="/builder-session/alcancia-loops.webp"
-              alt={t("Alcancía en Loops House", "Alcancía on Loops House")}
-              className="bs-sub-shot"
-            />
+        <>
+          <Label k={t("EJEMPLO", "EXAMPLE")} v={t("cómo funciona Alcancía", "how Alcancía works")} />
+          <h2 className="bs-h2">
+            {t("Charlás, firma, ahorra solo.", "You chat, it signs, it saves on its own.")}
+          </h2>
+          <div className="bs-frames">
+            {[1, 2, 3, 4, 5, 6].map((n) => (
+              <img key={n} src={`/builder-session/alcancia-paso-${n}.webp`} alt="" />
+            ))}
           </div>
-          <div className="bs-sub-r">
-            <div className="bs-crit-t">{t("Qué incluye", "What it includes")}</div>
-            <div className="bs-sub-qrs">
-              <QR q={QR_AL_REPO} label={t("Repo público", "Public repo")} url="github.com/artugrande/alcancia" />
-              <QR q={QR_AL_WEB} label={t("Web en Vercel", "Live on Vercel")} url="alcancia-celo.vercel.app" />
-              <QR q={QR_AL_VIDEO} label="Demo video" url="alcancia-celo.vercel.app/demo.mp4" />
-              <QR q={QR_AL_SPEC} label={t("Spec del producto", "Product spec")} url="arturogrande.com/builder-session/alcancia-spec.pdf" />
-            </div>
-            <p className="bs-foot">
-              {t(
-                "Y una página de cómo funciona, para entender el agente sin leer el código.",
-                "And a how-it-works page to understand the agent without reading the code.",
-              )}
-            </p>
+        </>
+      ),
+    },
+    // Alcancía 3 · every link as a QR
+    {
+      node: (
+        <>
+          <Label k={t("EJEMPLO", "EXAMPLE")} v={t("todo Alcancía, a un escaneo", "all of Alcancía, one scan away")} />
+          <h2 className="bs-h2">{t("Probalo y mirá cómo está hecho.", "Try it and see how it's built.")}</h2>
+          <div className="bs-qrgrid">
+            <QR q={QR_AL_WEB} label={t("Probar la app", "Try the app")} url="alcancia-celo.vercel.app" />
+            <QR q={QR_AL_REPO} label={t("Repo", "Repo")} url="github.com/artugrande/alcancia" />
+            <QR q={QR_AL_SPEC} label={t("Spec", "Spec")} url="arturogrande.com/builder-session/alcancia-spec.pdf" />
+            <QR q={QR_AL_HOW} label={t("Cómo funciona", "How it works")} url="alcancia-celo.vercel.app/como-funciona" />
+            <QR q={QR_LOOPS} label={t("Submission", "Submission")} url="loops.house/agents-on-open-rails" />
           </div>
-        </div>
+        </>
+      ),
+    },
+    // Alcancía 4 · the Loops House submission
+    {
+      node: (
+        <>
+          <Label k="SUBMISSION" v={<span className="bs-white">LOOPS HOUSE</span>} />
+          <h2 className="bs-h2">
+            {t("Así tiene que quedar tu proyecto en Loops House.", "This is how your project should look on Loops House.")}
+          </h2>
+          <img
+            src="/builder-session/alcancia-loops.webp"
+            alt={t("Alcancía cargada en Loops House", "Alcancía on Loops House")}
+            className="bs-loops-shot"
+          />
+        </>
       ),
     },
     // rules
@@ -1578,6 +1487,8 @@ export default function BuilderSessionPage() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      // Let a focused video keep its own controls (space = play/pause).
+      if ((e.target as HTMLElement)?.tagName === "VIDEO" && e.key !== "ArrowRight" && e.key !== "ArrowLeft") return
       if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") {
         e.preventDefault()
         go(1)
@@ -1900,34 +1811,20 @@ const CSS = `
 .bs-id .bs-qr span{max-width:150px;}
 @media(max-width:860px){.bs-id{grid-template-columns:minmax(0,1fr);}.bs-id>div{grid-template-columns:minmax(0,1fr);}}
 /* Alcancía example */
-.bs-al.bs-split{grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:center;}
-.bs-al .bs-h2{max-width:34ch;}
-.bs-al-prob{border:1px solid var(--line);border-left:2px solid var(--green);background:var(--panel);padding:12px 16px;margin-bottom:12px;}
-.bs-al-prob .bs-ul li{font-size:clamp(12px,min(1.25vw,2vh),14.5px);}
-.bs-al-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;}
-.bs-al-steps div{border:1px solid var(--line);background:var(--panel);padding:10px 12px;display:flex;flex-direction:column;gap:4px;}
-.bs-al-steps span{color:var(--green);font-size:11px;}
-.bs-al-steps b{font-weight:600;font-size:clamp(13px,1.35vw,15.5px);}
-.bs-al-steps em{font-style:normal;font-size:clamp(11.5px,min(1.15vw,1.9vh),13.5px);line-height:1.45;color:var(--soft);}
-.bs-al-r{display:flex;flex-direction:column;align-items:center;gap:18px;}
-.bs-al-shot{width:100%;border:1px solid var(--line);border-radius:10px;}
-.bs-al-tracks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px;}
-.bs-al-tracks div{border:1px solid var(--line);border-top:2px solid var(--c);background:var(--panel);padding:14px 16px;display:flex;flex-direction:column;gap:7px;}
-.bs-al-tracks em{font-style:normal;font-size:11px;letter-spacing:.1em;color:var(--c);}
-.bs-al-tracks b{font-weight:600;font-size:clamp(15px,1.6vw,19px);}
-.bs-al-tracks span{font-size:clamp(12.5px,1.3vw,15px);line-height:1.55;color:var(--soft);}
-.bs-al-proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:14px;}
-.bs-al-proof div{border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:5px;}
-.bs-al-proof b{font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);}
-.bs-al-proof span{font-size:clamp(12px,1.25vw,14.5px);line-height:1.45;color:var(--soft);word-break:break-word;}
-.bs-sub.bs-split{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:start;}
-.bs-sub-shot{width:100%;max-height:56vh;object-fit:contain;object-position:left top;border-radius:10px;border:1px solid var(--line);}
-.bs-sub-qrs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 14px;margin-top:6px;}
-.bs-sub-qrs .bs-qr-card svg{width:clamp(80px,min(8.5vw,14vh),116px);height:clamp(80px,min(8.5vw,14vh),116px);}
-.bs-sub-qrs .bs-qr span{max-width:170px;}
-.bs-sub-r .bs-foot{margin-top:14px;}
-@media(max-width:860px){.bs-al.bs-split,.bs-sub.bs-split{grid-template-columns:minmax(0,1fr);}.bs-al-tracks,.bs-al-proof{grid-template-columns:minmax(0,1fr);}.bs-al-steps{grid-template-columns:repeat(2,minmax(0,1fr));}}
-@media(max-width:520px){.bs-al-steps{grid-template-columns:minmax(0,1fr);}}
+.bs-video{position:relative;width:100%;max-width:min(1060px,calc(50vh * 16 / 9));margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:16/9;}
+.bs-video video,.bs-video-still{width:100%;height:100%;display:block;object-fit:cover;}
+.bs-video-still{display:none;}
+.bs-exp .bs-video video{display:none;}
+.bs-exp .bs-video-still{display:block;}
+.bs-frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:min(1120px,calc(46vh * 8 / 3));margin:0 auto;}
+.bs-frames img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block;}
+.bs-qrgrid{display:flex;justify-content:center;flex-wrap:nowrap;gap:clamp(14px,2.4vw,32px);margin-top:min(3vh,24px);}
+@media(max-width:860px){.bs-qrgrid{flex-wrap:wrap;}}
+.bs-qrgrid .bs-qr-card svg{width:clamp(90px,min(11vw,24vh),170px);height:clamp(90px,min(11vw,24vh),170px);}
+.bs-qrgrid .bs-qr b{font-size:clamp(14px,1.5vw,18px);}
+.bs-qrgrid .bs-qr span{max-width:180px;}
+.bs-loops-shot{display:block;width:auto;max-width:100%;max-height:48vh;margin:0 auto;border-radius:14px;border:1px solid var(--line);}
+@media(max-width:720px){.bs-frames{grid-template-columns:repeat(2,minmax(0,1fr));}}
 /* eve tree */
 .bs-tree{margin:0;border:1px solid var(--line);background:#050506;padding:20px 22px;font-family:var(--mono);font-size:clamp(12px,1.3vw,15px);line-height:1.9;color:var(--soft);overflow:auto;}
 /* steps */
